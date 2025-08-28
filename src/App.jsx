@@ -23,7 +23,7 @@ function App() {
   const next = () => setActive((prev) => (prev === features.length - 1 ? 0 : prev + 1));
   return (
     <section ref={showcaseRef} className="relative bg-white py-10 sticky top-0 sm:py-20 min-h-screen flex items-center">
-      <div className="container mx-auto flex flex-col md:p-2 flex-row items-center justify-between gap-8">
+      <div className="container mx-auto flex flex-col md: flex-row items-center justify-between gap-8">
         <div className="flex-1 space-y-4 ">
           <h3 className="text-blue-600 font-semibold">{features[active].title}</h3>
           <h2 className="text-xl font-bold">{features[active].heading}</h2>
